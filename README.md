@@ -1,18 +1,17 @@
 # Konecta Cloud Internship – Task 1
 
-This project demonstrates the Terraform automation of AWS resources for the *first Cloud Computing internship task*:
+This task demonstrates the Terraform automation of AWS resources for the *first Cloud Computing internship task*:
 
 - Full *Terraform automation*:
   - Import existing AWS resources
   - VPC & Subnets
   - S3 Buckets
-  - EC2 instances
 - *AWS CLI* configured for account management
 - Verify infrastructure with terraform plan
 
 ---
 
-## Project Diagram
+## Plan Result
 
 ![Terraform Plan – No Changes](assets/No_changes.png)
 
@@ -39,12 +38,11 @@ This project demonstrates the Terraform automation of AWS resources for the *fir
 ```bash
 📁 assets
   ├─ account_details.png
-  ├─ buckets.png
   └─ No_changes.png
+📁 modules
 📄 backend.tf
 📄 compute.tf
 📄 main.tf
-📁 modules
 📄 network.tf
 📄 provider.tf
 📄 README.md
