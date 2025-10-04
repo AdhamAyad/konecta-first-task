@@ -1,0 +1,214 @@
+RESOURCETAGMAPPINGLIST	arn:aws:ec2:eu-west-1:370661022279:security-group/sg-03e7ecb29301377f5
+TAGS	Project	Reporting Agencia
+TAGS	Platform	Terraform
+TAGS	Country	Espana
+TAGS	Name	SG-Reporting_agencia-Default
+RESOURCETAGMAPPINGLIST	arn:aws:rds:eu-west-1:370661022279:cluster-snapshot:rds:rds-reporting-agencia-cluster-1-2025-09-29-04-07
+TAGS	Project	Reporting Agencia
+TAGS	aws-backup	yes
+TAGS	Platform	Terraform
+TAGS	Country	Espana
+TAGS	Name	rds-reporting-agencia-cluster-1
+RESOURCETAGMAPPINGLIST	arn:aws:rds:eu-west-1:370661022279:cluster-snapshot:rds:rds-reporting-agencia-cluster-1-2025-10-01-04-07
+TAGS	Project	Reporting Agencia
+TAGS	aws-backup	yes
+TAGS	Platform	Terraform
+TAGS	Country	Espana
+TAGS	Name	rds-reporting-agencia-cluster-1
+RESOURCETAGMAPPINGLIST	arn:aws:rds:eu-west-1:370661022279:cluster-snapshot:awsbackup:job-942ed4e7-dd76-6bf7-91de-1fefc94b2b64
+TAGS	Project	Reporting Agencia
+TAGS	aws-backup	yes
+TAGS	Platform	Terraform
+TAGS	Backup	Backup-emea-automatizado-irlanda
+TAGS	Country	Espana
+TAGS	Name	rds-reporting-agencia-cluster-1
+RESOURCETAGMAPPINGLIST	arn:aws:rds:eu-west-1:370661022279:cluster-snapshot:awsbackup:job-cb314ff9-ac60-9f78-461b-6543b0e46e13
+TAGS	Project	Reporting Agencia
+TAGS	aws-backup	yes
+TAGS	Platform	Terraform
+TAGS	Backup	Backup-emea-automatizado-irlanda
+TAGS	Country	Espana
+TAGS	Name	rds-reporting-agencia-cluster-1
+RESOURCETAGMAPPINGLIST	arn:aws:secretsmanager:eu-west-1:370661022279:secret:access_rds_aurora_mysql-dY6eEm
+TAGS	Project	Reporting Agencia
+TAGS	Platform	Terraform
+TAGS	Country	Espana
+TAGS	Name	access_rds_aurora_mysql
+RESOURCETAGMAPPINGLIST	arn:aws:ec2:eu-west-1:370661022279:elastic-ip/eipalloc-0b23664b9e4a2daca
+TAGS	Project	Reporting Agencia
+TAGS	Platform	Terraform
+TAGS	Country	Espana
+TAGS	Name	EIP-Reporting_agencia-2
+RESOURCETAGMAPPINGLIST	arn:aws:ec2:eu-west-1:370661022279:internet-gateway/igw-013521ed4fb89f174
+TAGS	Project	Reporting Agencia
+TAGS	Platform	Terraform
+TAGS	Country	Espana
+TAGS	Name	IGW-Reporting_agencia
+RESOURCETAGMAPPINGLIST	arn:aws:ec2:eu-west-1:370661022279:natgateway/nat-0bfdc54a34d8ad025
+TAGS	Project	Reporting Agencia
+TAGS	Platform	Terraform
+TAGS	Country	Espana
+TAGS	Name	NAT-Reporting_agencia-2
+RESOURCETAGMAPPINGLIST	arn:aws:ec2:eu-west-1:370661022279:natgateway/nat-0624f5b1caa9ac4b8
+TAGS	Project	Reporting Agencia
+TAGS	Platform	Terraform
+TAGS	Country	Espana
+TAGS	Name	NAT-Reporting_agencia-1
+RESOURCETAGMAPPINGLIST	arn:aws:ec2:eu-west-1:370661022279:route-table/rtb-04377e2835327542d
+TAGS	Project	Reporting Agencia
+TAGS	Platform	Terraform
+TAGS	Country	Espana
+TAGS	Name	RT-Private2
+RESOURCETAGMAPPINGLIST	arn:aws:ec2:eu-west-1:370661022279:route-table/rtb-080687622f32db876
+TAGS	Project	Reporting Agencia
+TAGS	Platform	Terraform
+TAGS	Country	Espana
+TAGS	Name	RT-Private1
+RESOURCETAGMAPPINGLIST	arn:aws:ec2:eu-west-1:370661022279:subnet/subnet-08cd870b73d40786b
+TAGS	Project	Reporting Agencia
+TAGS	Platform	Terraform
+TAGS	Country	Espana
+TAGS	Name	10.133.29.64/28-Private1-eu-west-1a
+RESOURCETAGMAPPINGLIST	arn:aws:ec2:eu-west-1:370661022279:subnet/subnet-05f6f6a06adb5cac8
+TAGS	Project	Reporting Agencia
+TAGS	Platform	Terraform
+TAGS	Country	Espana
+TAGS	Name	10.133.29.96/28-Public1-eu-west-1a
+RESOURCETAGMAPPINGLIST	arn:aws:ec2:eu-west-1:370661022279:vpc/vpc-016c4e6a44c5cfdbc
+TAGS	Project	Reporting Agencia
+TAGS	Platform	Terraform
+TAGS	Country	Espana
+TAGS	Name	10.133.29.64/26-VPC-Reporting_agencia
+RESOURCETAGMAPPINGLIST	arn:aws:rds:eu-west-1:370661022279:cluster-snapshot:rds:rds-reporting-agencia-cluster-1-2025-09-28-04-07
+TAGS	Project	Reporting Agencia
+TAGS	aws-backup	yes
+TAGS	Platform	Terraform
+TAGS	Country	Espana
+TAGS	Name	rds-reporting-agencia-cluster-1
+RESOURCETAGMAPPINGLIST	arn:aws:rds:eu-west-1:370661022279:cluster-snapshot:rds:rds-reporting-agencia-cluster-1-2025-10-02-04-07
+TAGS	Project	Reporting Agencia
+TAGS	aws-backup	yes
+TAGS	Platform	Terraform
+TAGS	Country	Espana
+TAGS	Name	rds-reporting-agencia-cluster-1
+RESOURCETAGMAPPINGLIST	arn:aws:rds:eu-west-1:370661022279:cluster-snapshot:rds:rds-reporting-agencia-cluster-1-2025-10-03-04-07
+TAGS	Project	Reporting Agencia
+TAGS	aws-backup	yes
+TAGS	Platform	Terraform
+TAGS	Country	Espana
+TAGS	Name	rds-reporting-agencia-cluster-1
+RESOURCETAGMAPPINGLIST	arn:aws:rds:eu-west-1:370661022279:cluster-snapshot:awsbackup:job-50edb67a-5643-f3d4-7830-a4b5c96529e3
+TAGS	Project	Reporting Agencia
+TAGS	aws-backup	yes
+TAGS	Platform	Terraform
+TAGS	Backup	Backup-emea-automatizado-irlanda
+TAGS	Country	Espana
+TAGS	Name	rds-reporting-agencia-cluster-1
+RESOURCETAGMAPPINGLIST	arn:aws:rds:eu-west-1:370661022279:cluster-snapshot:awsbackup:job-e6887ee7-8f44-7d3e-ae79-6a80e73874e8
+TAGS	Project	Reporting Agencia
+TAGS	aws-backup	yes
+TAGS	Platform	Terraform
+TAGS	Backup	Backup-emea-automatizado-irlanda
+TAGS	Country	Espana
+TAGS	Name	rds-reporting-agencia-cluster-1
+RESOURCETAGMAPPINGLIST	arn:aws:rds:eu-west-1:370661022279:subgrp:rds-sntg-private
+TAGS	Project	Reporting Agencia
+TAGS	Platform	Terraform
+TAGS	Country	Espana
+TAGS	Name	RDS-SNTG-RDS-Private
+RESOURCETAGMAPPINGLIST	arn:aws:ec2:eu-west-1:370661022279:elastic-ip/eipalloc-05c0831d19c33e9e0
+TAGS	Project	Reporting Agencia
+TAGS	Platform	Terraform
+TAGS	Country	Espana
+TAGS	Name	EIP-Reporting_agencia-1
+RESOURCETAGMAPPINGLIST	arn:aws:ec2:eu-west-1:370661022279:network-acl/acl-07ef47749df8c9f72
+TAGS	Project	Reporting Agencia
+TAGS	Platform	Terraform
+TAGS	Country	Espana
+TAGS	Name	ACL-Reporting_agencia-Default
+RESOURCETAGMAPPINGLIST	arn:aws:ec2:eu-west-1:370661022279:subnet/subnet-088a6fd452f66cc02
+TAGS	Project	Reporting Agencia
+TAGS	Platform	Terraform
+TAGS	Country	Espana
+TAGS	Name	10.133.29.112/28-Public2-eu-west-1b
+RESOURCETAGMAPPINGLIST	arn:aws:ec2:eu-west-1:370661022279:subnet/subnet-0fec94f2450c87a84
+TAGS	Project	Reporting Agencia
+TAGS	Platform	Terraform
+TAGS	Country	Espana
+TAGS	Name	10.133.29.80/28-Private2-eu-west-1b
+RESOURCETAGMAPPINGLIST	arn:aws:rds:eu-west-1:370661022279:cluster:rds-reporting-agencia-cluster-1
+TAGS	Project	Reporting Agencia
+TAGS	aws-backup	yes
+TAGS	Platform	Terraform
+TAGS	Country	Espana
+TAGS	Name	rds-reporting-agencia-cluster-1
+RESOURCETAGMAPPINGLIST	arn:aws:rds:eu-west-1:370661022279:cluster-snapshot:rds:rds-reporting-agencia-cluster-1-2025-09-27-04-07
+TAGS	Project	Reporting Agencia
+TAGS	aws-backup	yes
+TAGS	Platform	Terraform
+TAGS	Country	Espana
+TAGS	Name	rds-reporting-agencia-cluster-1
+RESOURCETAGMAPPINGLIST	arn:aws:rds:eu-west-1:370661022279:db:rds-reporting-agencia-node-1
+TAGS	Project	Reporting Agencia
+TAGS	Platform	Terraform
+TAGS	Country	Espana
+TAGS	Name	rds-reporting-agencia-node-1
+RESOURCETAGMAPPINGLIST	arn:aws:ec2:eu-west-1:370661022279:route-table/rtb-04bb255d36c631dc5
+TAGS	Project	Reporting Agencia
+TAGS	Platform	Terraform
+TAGS	Country	Espana
+TAGS	Name	RT-Public2
+RESOURCETAGMAPPINGLIST	arn:aws:ec2:eu-west-1:370661022279:route-table/rtb-077a2c6b99043cf7b
+TAGS	Project	Reporting Agencia
+TAGS	Platform	Terraform
+TAGS	Country	Espana
+TAGS	Name	RT-Public1
+RESOURCETAGMAPPINGLIST	arn:aws:ec2:eu-west-1:370661022279:security-group/sg-0a7ac2836e60e0688
+TAGS	Project	Reporting Agencia
+TAGS	Platform	Terraform
+TAGS	Country	Espana
+TAGS	Name	SG-Reporting_agencia-RDS-aurora-mysql
+RESOURCETAGMAPPINGLIST	arn:aws:ec2:eu-west-1:370661022279:transit-gateway-attachment/tgw-attach-05fbae8d9e2ff199c
+TAGS	Project	Reporting Agencia
+TAGS	Platform	Terraform
+TAGS	Country	Espana
+TAGS	Name	TGW-Attach-Irlanda-core
+RESOURCETAGMAPPINGLIST	arn:aws:rds:eu-west-1:370661022279:cluster:cluster-s7kmycx54xflcy3nu6uljsby5a
+TAGS	Project	Reporting Agencia
+TAGS	aws-backup	yes
+TAGS	Platform	Terraform
+TAGS	Country	Espana
+TAGS	Name	rds-reporting-agencia-cluster-1
+RESOURCETAGMAPPINGLIST	arn:aws:rds:eu-west-1:370661022279:cluster-snapshot:awsbackup:job-a4be4e95-0da7-dfc1-fa0d-4e9a3febe505
+TAGS	Project	Reporting Agencia
+TAGS	aws-backup	yes
+TAGS	Platform	Terraform
+TAGS	Backup	Backup-emea-automatizado-irlanda
+TAGS	Country	Espana
+TAGS	Name	rds-reporting-agencia-cluster-1
+RESOURCETAGMAPPINGLIST	arn:aws:rds:eu-west-1:370661022279:cluster-snapshot:awsbackup:job-29a8812f-f1ad-1dd7-ab81-be82ae4dd164
+TAGS	Project	Reporting Agencia
+TAGS	aws-backup	yes
+TAGS	Platform	Terraform
+TAGS	Backup	Backup-emea-automatizado-irlanda
+TAGS	Country	Espana
+TAGS	Name	rds-reporting-agencia-cluster-1
+RESOURCETAGMAPPINGLIST	arn:aws:rds:eu-west-1:370661022279:cluster-snapshot:awsbackup:job-d2a7be94-e90d-fafe-4fe6-d7088179d5f0
+TAGS	Project	Reporting Agencia
+TAGS	aws-backup	yes
+TAGS	Platform	Terraform
+TAGS	Backup	Backup-emea-automatizado-irlanda
+TAGS	Country	Espana
+TAGS	Name	rds-reporting-agencia-cluster-1
+RESOURCETAGMAPPINGLIST	arn:aws:rds:eu-west-1:370661022279:cluster-snapshot:rds:rds-reporting-agencia-cluster-1-2025-09-30-04-07
+TAGS	Project	Reporting Agencia
+TAGS	aws-backup	yes
+TAGS	Platform	Terraform
+TAGS	Country	Espana
+TAGS	Name	rds-reporting-agencia-cluster-1
+RESOURCETAGMAPPINGLIST	arn:aws:rds:eu-west-1:370661022279:snapshot:snap-final-rds-reporting-agencia-08-03-2024
+TAGS	Project	Reporting Agencia
+TAGS	aws-backup	yes
+TAGS	Platform	Terraform
+TAGS	Country	Espana
+TAGS	Name	rds-reporting-agencia

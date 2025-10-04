@@ -1,0 +1,46 @@
+#!/bin/bash
+
+# Import VPC
+terraform import aws_vpc.reporting_agencia vpc-016c4e6a44c5cfdbc
+
+# Import Subnets
+terraform import aws_subnet.private1 subnet-08cd870b73d40786b
+terraform import aws_subnet.private2 subnet-0fec94f2450c87a84
+terraform import aws_subnet.public1  subnet-05f6f6a06adb5cac8
+terraform import aws_subnet.public2  subnet-088a6fd452f66cc02
+
+# Import Route Tabels
+terraform import aws_route_table.private1 rtb-080687622f32db876
+terraform import aws_route_table.private2 rtb-04377e2835327542d
+terraform import aws_route_table.public1  rtb-077a2c6b99043cf7b
+terraform import aws_route_table.public2  rtb-04bb255d36c631dc5
+
+# Import SG
+terraform import aws_security_group.default     sg-03e7ecb29301377f5
+terraform import aws_security_group.aurora_mysql sg-0a7ac2836e60e0688
+
+# Import Internet Gateway
+terraform import aws_internet_gateway.igw igw-013521ed4fb89f174
+
+# Import NAT
+terraform import aws_nat_gateway.nat1 nat-0624f5b1caa9ac4b8
+terraform import aws_nat_gateway.nat2 nat-0bfdc54a34d8ad025
+
+# Import EIP
+terraform import aws_eip.eip1 eipalloc-05c0831d19c33e9e0
+terraform import aws_eip.eip2 eipalloc-0b23664b9e4a2daca
+
+# Import Transit Gateway
+terraform import aws_ec2_transit_gateway_vpc_attachment.tgw_attach tgw-attach-05fbae8d9e2ff199c
+
+# Impport RDS Cluster
+terraform import aws_rds_cluster.reporting_agencia rds-reporting-agencia-cluster-1
+
+# Import RDS Instance
+terraform import aws_rds_cluster_instance.reporting_agencia_node1 rds-reporting-agencia-node-1
+
+# Import Secret Manager
+terraform import aws_secretsmanager_secret.aurora_mysql arn:aws:secretsmanager:eu-west-1:370661022279:secret:access_rds_aurora_mysql-dY6eEm
+
+# Import ACL
+terraform import aws_default_network_acl.default acl-07ef47749df8c9f72
