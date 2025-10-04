@@ -1,6 +1,3 @@
-تمام، ده ملف `README.md` كامل باللغة الإنجليزية، جاهز للنسخ، بدون أي رموز أو نصوص إضافية:
-
-````markdown
 # Konecta AWS Reporting Agencia – Cloud Internship Task 1
 
 This repository demonstrates **AWS infrastructure management using Terraform** for the first Cloud Computing internship task.  
@@ -19,7 +16,7 @@ konecta_aws_reporting_agencia/
 │
 ├─ compute.tf                   # Compute resources definition (EC2, AutoScaling, etc.)
 ├─ network.tf                   # Network configuration (VPC, Subnets, Security Groups)
-├─ storage.tf                   # Storage resources (S3, EBS, etc.)
+├─ storage.tf                   # Storage resources definition
 ├─ provider.tf                  # AWS provider configuration
 ├─ backend.tf                   # Terraform backend configuration
 ├─ variables.tf                 # Terraform variables definitions
@@ -29,7 +26,7 @@ konecta_aws_reporting_agencia/
 ├─ main.tf                      # Main file linking resources and modules
 ├─ modules/                     # Reusable Terraform modules
 ├─ PlanResult.txt               # Result of terraform plan
-├─ ResourcesByTerraform/        # AWS resources tagged with Platform=Terraform
+├─ ResourcesByTerraform/        # Output of AWS resources tagged Platform=Terraform
 ├─ ImportCommands/              # Bash script for importing existing AWS resources
 └─ README.md                    # This file
 ````
@@ -40,14 +37,19 @@ konecta_aws_reporting_agencia/
 
 * **compute.tf**: Configuration for compute resources such as EC2 and AutoScaling Groups.
 * **network.tf**: Network setup including VPC, Subnets, and Security Groups.
-* **storage.tf**: Storage resources such as S3 buckets and EBS volumes.
+* **storage.tf**: Storage resources configuration.
 * **provider.tf**: AWS provider and region setup.
 * **backend.tf**: Centralized Terraform state storage configuration.
 * **variables.tf & terraform.tfvars**: Variable definitions and values for the project.
 * **main.tf**: Links all resources and modules together.
 * **modules/**: Reusable Terraform modules.
-* **PlanResult.txt**: Output of `terraform plan`.
-* **ResourcesByTerraform/**: AWS resources with the tag `Platform=Terraform`.
+* **PlanResult.txt**: Output of `terraform plan` stored for verification.
+* **ResourcesByTerraform/**: Output of AWS resources filtered with `Platform=Terraform` tag, generated with:
+
+```bash
+aws resourcegroupstaggingapi get-resources --tag-filters Key=Platform,Values=Terraform --output text > ResourcesByTerraform/resources.txt
+```
+
 * **ImportCommands/**: Bash script to import existing AWS resources into Terraform.
 
 ---
@@ -56,11 +58,11 @@ konecta_aws_reporting_agencia/
 
 ### Terraform Plan – No Changes
 
-![No Changes](assets/No_changes.png)
+![No Changes](assets/no_changes.png)
 
 ### AWS Account Details
 
-![User Info](assets/account_details.png)
+![User Info](assets/user_info.png)
 
 ---
 
@@ -91,13 +93,20 @@ cd ImportCommands
 bash import_all.sh
 ```
 
+5. **Generate a list of existing AWS resources managed by Terraform:**
+
+```bash
+aws resourcegroupstaggingapi get-resources --tag-filters Key=Platform,Values=Terraform --output text > ResourcesByTerraform/resources.txt
+```
+
 ---
 
 ## Notes
 
 * All resources are created using Terraform to enable Infrastructure as Code (IaC).
 * Files are organized by type (Compute, Network, Storage) for easier maintenance.
-* All images are located in the `assets` folder to illustrate command results and account status.
+* All images are located in the `assets` folder to illustrate command results and account information.
+* `ResourcesByTerraform/resources.txt` contains the current list of AWS resources managed by Terraform.
 
 ---
 
@@ -112,8 +121,13 @@ bash import_all.sh
 
 ## Infrastructure Overview
 
-* **Network (network.tf):** 1 VPC + 4 Subnets
-* **Storage (storage.tf):** 2 S3 Buckets
+* **Network (network.tf):** VPC + Subnets + Security Groups
 * **Compute (compute.tf):** EC2 Instances Configuration
+* **Storage (storage.tf):** Storage resources configuration
 * **Provider (provider.tf):** AWS Provider Setup
 * **Backend (backend.tf):** Terraform Backend Configuration
+
+```
+
+إذا تحب، أقدر أعمل نسخة **أقصر وأكثر احترافية** للعرض مباشرة على GitHub مع كل التفاصيل الأساسية بدون أي تكرار. تريد أن أفعل ذلك؟
+```
