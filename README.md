@@ -58,7 +58,7 @@ aws resourcegroupstaggingapi get-resources --tag-filters Key=Platform,Values=Ter
 
 ### Terraform Plan – No Changes
 
-![No Changes](assets/No_changes.png)
+![No Changes](assets/no_changes.png)
 
 ### AWS Account Details
 
