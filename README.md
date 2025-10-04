@@ -25,9 +25,9 @@ konecta_aws_reporting_agencia/
 ├─ terraform.tfstate.backup     # Backup of Terraform state
 ├─ main.tf                      # Main file linking resources and modules
 ├─ modules/                     # Reusable Terraform modules
-├─ PlanResult.txt               # Result of terraform plan
-├─ ResourcesByTerraform/        # Output of AWS resources tagged Platform=Terraform
-├─ ImportCommands/              # Bash script for importing existing AWS resources
+├─ PlanResult                   # Result of terraform plan
+├─ ResourcesByTerraform         # Output of AWS resources tagged Platform=Terraform
+├─ ImportCommands               # Bash script for importing existing AWS resources
 └─ README.md                    # This file
 ````
 
@@ -43,14 +43,14 @@ konecta_aws_reporting_agencia/
 * **variables.tf & terraform.tfvars**: Variable definitions and values for the project.
 * **main.tf**: Links all resources and modules together.
 * **modules/**: Reusable Terraform modules.
-* **PlanResult.txt**: Output of `terraform plan` stored for verification.
-* **ResourcesByTerraform/**: Output of AWS resources filtered with `Platform=Terraform` tag, generated with:
+* **PlanResult**: Output of `terraform plan` stored for verification.
+* **ResourcesByTerraform**: Output of AWS resources filtered with `Platform=Terraform` tag, generated with:
 
 ```bash
-aws resourcegroupstaggingapi get-resources --tag-filters Key=Platform,Values=Terraform --output text > ResourcesByTerraform/resources.txt
+aws resourcegroupstaggingapi get-resources --tag-filters Key=Platform,Values=Terraform --output text > ResourcesByTerraform
 ```
 
-* **ImportCommands/**: Bash script to import existing AWS resources into Terraform.
+* **ImportCommands: Bash script to import existing AWS resources into Terraform.
 
 ---
 
@@ -74,29 +74,28 @@ aws resourcegroupstaggingapi get-resources --tag-filters Key=Platform,Values=Ter
 terraform init
 ```
 
-2. **Check for changes:**
+2. **Generate a list of existing AWS resources managed by Terraform:**
+
+```bash
+aws resourcegroupstaggingapi get-resources --tag-filters Key=Platform,Values=Terraform --output text > ResourcesByTerraform/resources.txt
+```
+
+3. **Import existing resources:**
+
+```bash
+./ImportCommands
+```
+
+4. **Check for changes:**
 
 ```bash
 terraform plan
 ```
 
-3. **Apply changes to the environment:**
+5. **Apply changes to the environment:**
 
 ```bash
 terraform apply
-```
-
-4. **Import existing resources:**
-
-```bash
-cd ImportCommands
-bash import_all.sh
-```
-
-5. **Generate a list of existing AWS resources managed by Terraform:**
-
-```bash
-aws resourcegroupstaggingapi get-resources --tag-filters Key=Platform,Values=Terraform --output text > ResourcesByTerraform/resources.txt
 ```
 
 ---
@@ -126,8 +125,3 @@ aws resourcegroupstaggingapi get-resources --tag-filters Key=Platform,Values=Ter
 * **Storage (storage.tf):** Storage resources configuration
 * **Provider (provider.tf):** AWS Provider Setup
 * **Backend (backend.tf):** Terraform Backend Configuration
-
-```
-
-إذا تحب، أقدر أعمل نسخة **أقصر وأكثر احترافية** للعرض مباشرة على GitHub مع كل التفاصيل الأساسية بدون أي تكرار. تريد أن أفعل ذلك؟
-```
